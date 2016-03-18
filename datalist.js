@@ -2,12 +2,13 @@ function inicio()
 {
 	var datalist = document.getElementById("datalist");
 	var input = document.getElementById("input");
+	var texto = document.getElementById("texto");
 
-	input.addEventListener("keyup", function (event)
+	input.addEventListener("keyup", function (evento)
 	{
-		if(event.which === 13)
+		if(evento)
 		{
-			alert(input.value);
+			texto.innerHTML = input.value;
 		}
-	}, false);
+	});
 }
